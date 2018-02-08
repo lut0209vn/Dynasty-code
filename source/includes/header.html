@@ -1,0 +1,124 @@
+<header class="page-header navbar navbar-fixed-top custom-navbar">
+  <div class="nav-mobile">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">Free & Easy</a></li>
+      <li><a href="#">Cruise</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Flights</a></li>
+      <li><a href="#">Jr Pass</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Rewards</a></li>
+      <li class="ctn-login"><a class="signup" href="#">Sign Up</a></li>
+      <li class="ctn-login"><a class="login" href="#">Login</a></li>
+      <li><a class="cart" href="#"><span>Cart</span></a></li>
+    </ul><!--.nav-left -->
+  </div><!-- .nav-destop -->
+  <div class="container clearfix">
+    <div class="bg-boder">
+      <span class="bg-left"></span>
+      <span class="bg-right"></span>
+    </div><!-- .bg-boder -->
+    <div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+		</div>
+    <div class="nav-main clearfix">
+      <ul class="nav-left">
+        <li><span><a href="#">Tours</a></span></li>
+        <li><span><a href="#">Free & Easy</a></span></li>
+        <li><span><a href="#">Cruise</a></span></li>
+        <li><span><a href="#">Hotels</a></span></li>
+        <li><span><a href="#">Flights</a></span></li>
+      </ul><!--.nav-left -->
+      <ul class="nav-right">
+        <li><span><a href="#">Jr Pass</a></span></li>
+        <li><span><a href="#">Store</a></span></li>
+        <li><span><a href="#">Rewards</a></span></li>
+        <li class="ctn-login">
+          <span><a class="signup" href="#">Sign Up</a></span>
+          <span><a class="login" href="#">Login</a></span>
+        </li>
+        <li><span><a class="cart" href="#"><img src="images/icon-shopping.png" alt="">Cart</a></span></li>
+      </ul><!-- .nav-right -->
+    </div><!-- .nav-main -->
+    <div class="logo">
+      <a href="#"><img src="images/logo.jpg" alt=""></a>
+    </div><!-- .logo -->
+  </div>
+</header>
+<div class="nav nav-tabs clearfix">
+  <div class="tab-search">
+    <div class="container">
+      <div class="inner-ctn">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#search">All</a></li>
+          <li><a data-toggle="tab" href="#menu1">Check my booking</a></li>
+        </ul>
+        <div class="tab-content">
+          <section id="search" class="tab-pane fade in active">
+              <form class="search-form clearfix" action="index.html" method="post">
+                <ul class="skewed clearfix">
+                  <li class="li-outer">
+                    <div class="search-tours skewed-revert">
+                      <div class="icon-search">
+                        <img src="images/icon-search.png" alt="">
+                      </div><!-- .icon-search -->
+                      <select data-placeholder="Your Favorite Type of Bear" class="chosen-select-no-single" tabindex="10" style="visibility: hidden">
+                        <option selected>Tours</option>
+                        <option>Tours</option>
+                        <option>Asiatic Black Bear</option>
+                        <option>Brown Bear</option>
+                        <option>Giant Panda</option>
+                        <option disabled>Sun Bear</option>
+                      </select>
+                    </div><!-- .search-tours -->
+                  </li>
+                  <li class="clearfix li-outer">
+                    <div class="select-map skewed-revert">
+                      <div class="ico-location" data-toggle="modal" data-target="#ModalSelectMap">
+                        <img src="images/ico-location.png" alt="">
+                      </div>
+                      <span class="destination"></span>
+                      <div id="get-info">
+                        <select data-placeholder="Destination" multiple class="chzn-select chosen-select-map" tabindex="1" style="visibility: hidden">
+                          <option>American</option>
+                          <option>Malaysia</option>
+                          <option>VietN</option>
+                          <option>Giant Panda</option>
+                        </select>
+                      </div><!-- #get-info -->
+                      <img class="ico-add-location icon" src="images/ico-add-location.png" alt="">
+                    </div><!-- .select-map -->
+                  </li>
+                  <li class="clearfix li-outer">
+                    <div class="datepicker skewed-revert">
+                      <img src="images/ico-datepicker.png" alt="" class="icon">
+                      <input type="text" class="month_year" placeholder="Date">
+                    </div><!-- .datepicker -->
+                  </li>
+                  <li class="clearfix li-outer">
+                    <div class="duration skewed-revert">
+                      <img src="images/ico-duration.png" alt="" class="icon">
+                      <input type="text" value="" placeholder="Duration">
+                    </div>
+                  </li>
+                  <li class="clearfix li-outer">
+                    <div class="budget skewed-revert">
+                      <img src="images/ico-coin.png" alt="" class="icon">
+                      <input type="text" value="" placeholder="Budget (SGD)">
+                    </div>
+                  </li>
+                </ul>
+                <span class="view-all">View All</span>
+              </form>
+          </section><!-- #search -->
+        </div>
+      </div><!-- .inner -->
+    </div><!-- .container -->
+  </div><!-- .tab-search -->
+</div>
+<!-- /.page-header -->

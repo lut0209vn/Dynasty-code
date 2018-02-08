@@ -1,0 +1,61 @@
+/* general setting
+ -----------------------------------------------------*/
+* {
+	outline: transparent;
+}
+.black{
+	color: #000;
+}
+body {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#272828;
+  line-height: 1.5;
+	background: #FFF;
+}
+
+a {
+	color: #272828;
+	transition-duration: 0.2s;
+	&:hover {
+		text-decoration: none;
+		color: #00489F;
+	}
+	&:focus {
+		outline: none;
+    text-decoration: none;
+	}
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+	line-height: 1.4;
+}
+
+p {
+	margin-bottom: 22px;
+	&:last-child{
+		margin-bottom: 0px;
+	}
+}
+
+input[type="submit"]{
+	border: none;
+  transition-duration: 0.2s;
+}
+
+.page-header {
+	margin: 0;
+	padding: 0;
+	border: none;
+}

@@ -1,0 +1,276 @@
+/* footer
+ -----------------------------------------------------*/
+ .page-footer{
+   text-align: left;
+   padding-top: 30px;
+   .container{
+     .top-footer{
+       padding-bottom: 20px;
+       display: block;
+       padding-left: 40px;
+       .left-logo{
+         margin-right: 5%;
+         width: 290px;
+         float: left;
+         .logo-lanscap{
+           margin-bottom: 22px;
+         }
+         .row{
+           .app-store{
+             margin-right: 10px;
+           }
+         }
+       }
+       ul{
+         display: inline-block;
+         float: left;
+         width: 12%;
+         li{
+           a{
+             color: #272828;
+             font-size: 14px;
+             line-height: 18px;
+             &:hover{
+               color: red;
+             }
+           }
+         }
+       }
+       .right-logo{
+         float: left;
+         margin-left: 4%;
+         width: 150px;
+         span{
+           margin-bottom: 10px;
+           display: block;
+           .awards-logo{
+             margin-right: 20px;
+           }
+           .ttg-logo{
+             margin-right: 22px;
+           }
+           a{
+             display: inline-block;
+           }
+         }
+       }
+     }
+     @media screen and(max-width: 1200px){
+       .top-footer{
+         .left-logo{
+           margin-right: 4%;
+         }
+         .right-logo{
+           margin-left: 4%;
+         }
+       }
+     }
+     @media screen and(max-width: 1100px){
+       .top-footer{
+         .left-logo{
+           margin-right: 2%;
+         }
+         .right-logo{
+           margin-left: 2%;
+         }
+       }
+     }
+     @media screen and(max-width: 1050px){
+       .top-footer{
+         .left-logo{
+           width: 250px;
+           img{
+             width: 100%;
+           }
+           .div-row{
+             .app-store{
+               width: 120px;
+               display: inline-block;
+             }
+             .google-play{
+               width: 120px;
+               display: inline-block;
+             }
+           }
+         }
+         ul{
+           width: 13%;
+           li{
+             a{
+               font-size: 13px;
+             }
+           }
+         }
+         .right-logo{
+           margin-left: 2%;
+           span{
+             margin-bottom: 0px;
+             .awards-logo{
+               margin-right: 10px;
+             }
+           }
+         }
+       }
+     }
+     @media screen and(max-width: 992px){
+       .top-footer{
+         width: 90%;
+         margin: 0 auto;
+         padding-bottom: 40px;
+         text-align: center;
+         padding-left: 0px;
+         .left-logo{
+           padding-bottom: 50px;
+           margin: 0 auto;
+           width: 250px;
+           display: block;
+           clear: both;
+           float: none;
+           img{
+             width: 100%;
+           }
+           .div-row{
+             .app-store{
+               width: 120px;
+               display: inline-block;
+             }
+             .google-play{
+               width: 120px;
+               display: inline-block;
+             }
+           }
+         }
+         ul{
+           text-align: left;
+           width: 25%;
+           li{
+             a{
+               font-size: 13px;
+             }
+           }
+         }
+         .right-logo{
+           display:block;
+           padding-top: 150px;
+           margin: 0 auto;
+           float: none;
+           span{
+             margin-bottom: 0px;
+             .awards-logo{
+               margin-right: 10px;
+             }
+           }
+         }
+       }
+     }
+     @media screen and(max-width: 600px){
+       .top-footer{
+         padding-bottom: 40px;
+         padding-left: 0px;
+         text-align: center;
+         ul{
+           text-align: center;
+           width: 100%;
+           float: none;
+           li{
+             float: none;
+             text-align: center;
+             margin-left: 0px;
+             a{
+               font-size: 13px;
+             }
+           }
+         }
+         .right-logo{
+           display:block;
+           padding-top: 10px;
+           margin: 0 auto;
+           float: none;
+           span{
+             margin-bottom: 0px;
+             .awards-logo{
+               margin-right: 10px;
+             }
+           }
+         }
+       }
+     }
+     .bt-footer{
+       border-top: 2px solid #e9e9e9;
+       width: 90%;
+       margin: 0 auto;
+       padding: 27px 0px 30px 0px;
+       ul{
+         width: 18%;
+         margin-left: 2%;
+         display: inline-block;
+         float: left;
+         li{
+           margin-left: 0px;
+           color: #272828;
+           font-size: 14px;
+           line-height: 18px;
+           span{
+             font-weight: 600;
+           }
+         }
+       }
+     }
+     @media screen and(min-width: 1440px){
+       .bt-footer{
+         ul{
+           margin-left: 10px;
+         }
+         ul:nth-child(1){
+           width: 245px;
+         }
+         ul:nth-child(2){
+           width: 245px;
+         }
+         ul:nth-child(3){
+           width: 330px;
+         }
+         ul:nth-child(4){
+           width: 230px;
+         }
+         ul:nth-child(5){
+           width: auto;
+         }
+       }
+     }
+     @media screen and(max-width: 992px){
+       .bt-footer{
+         padding-top: 60px;
+         border-top: 1px solid #e9e9e9;
+         ul{
+           margin-bottom: 25px;
+           margin-left: 0px;
+           width: 33.33%;
+           text-align: center;
+           padding:0px 5px;
+           li{
+             text-align: left;
+             margin-bottom: 10px;
+           }
+         }
+       }
+     }
+     @media screen and(max-width: 600px){
+       .bt-footer{
+         margin: 0 auto;
+         padding-top: 40px;
+         border-top: 1px solid #e9e9e9;
+         ul{
+           margin-bottom: 25px;
+           margin-left: 0px;
+           width: 100%;
+           text-align: center;
+           li{
+             text-align: center;
+             margin-bottom: 10px;
+           }
+         }
+       }
+     }
+   }
+ }

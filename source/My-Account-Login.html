@@ -1,0 +1,48 @@
+@include "includes/styles.html";
+@include "includes/header.html";
+
+<main class="page-main page-my-account-login">
+  <div  data-toggle="modal" data-target="#modal-my-account-login">
+    <img src="images/ico-location.png" alt="">
+  </div>
+  <div class="modal fade modal-form" id="modal-my-account-login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog vertical-center" role="document">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="images/ico-close-3.png" alt=""></span>
+        </button>
+      </div><!-- .modal-header -->
+      <div class="modal-body">
+        <h3 class="title">Log In</h3>
+        <div class="content clearfix">
+          <div class="social-login">
+            <div class="inner">
+              <span class="fb"><i class="fa fa-facebook" aria-hidden="true"></i>Log In with Facebook</span>
+              <span class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i>Log In with Google</span>
+            </div><!-- .inner -->
+          </div><!-- .social-login -->
+          <div class="form">
+            <div class="inner">
+              <form class="form-login" action="index.html" method="post">
+                <div class="email">
+                  <input type="text" name="" value="" placeholder="Email Address">
+                </div><!-- .email -->
+                <div class="pass-word">
+                  <input type="text" name="" value="" placeholder="Password">
+                  <a class="forgot" href="#">Forgot?</a>
+                </div><!-- .pass-word -->
+                <input type="submit" name="" value="Log In">
+              </form>
+              <div class="row">
+                <a href="#">Don't have an account? <span>Sign Up now</span></a>
+              </div>
+            </div><!-- .inner -->
+          </div><!-- .form-->
+        </div><!-- .content -->
+      </div>
+    </div>
+  </div>
+</main>
+<!-- /.page-main -->
+@include "includes/footer.html";
+@include "includes/scripts.html";

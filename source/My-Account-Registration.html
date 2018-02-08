@@ -1,0 +1,61 @@
+@include "includes/styles.html";
+@include "includes/header.html";
+
+<main class="page-main page-my-account-login">
+  <div  data-toggle="modal" data-target="#modal-my-account-login">
+    <img src="images/ico-location.png" alt="">
+  </div>
+  <div class="modal fade modal-form" id="modal-my-account-login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="images/ico-close-3.png" alt=""></span>
+        </button>
+      </div><!-- .modal-header -->
+      <div class="modal-body">
+        <h3 class="title">Log In</h3>
+        <div class="content clearfix">
+          <div class="social-login">
+            <div class="inner">
+              <span class="fb"><i class="fa fa-facebook" aria-hidden="true"></i>Log In with Facebook</span>
+              <span class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i>Log In with Google</span>
+            </div><!-- .inner -->
+          </div><!-- .social-login -->
+          <div class="form">
+            <div class="inner">
+              <form class="form-registration" action="index.html" method="post">
+                <div class="row">
+                  <input type="text" name="" value="" placeholder="Surname">
+                  <input type="text" name="" value="" placeholder="First Name">
+                </div>
+                <div class="row">
+                  <input type="text" name="" value="" placeholder="Mobile Number">
+                  <input type="text" name="" value="" placeholder="Email Address">
+                </div>
+                <div class="row">
+                  <textarea placeholder="Mailing Address"></textarea>
+                </div>
+                <div class="row">
+                  <input type="text" name="" value="" placeholder="Password">
+                  <input type="text" name="" value="" placeholder="Retype Password">
+                </div>
+                <div class="row">
+                  <input type="text" name="" value="" placeholder="Captcha">
+                </div>
+                <div class="md-btn-group">
+                  <input type="submit" name="" class="btn btn-green" value="Sign Up">
+                </div><!-- .md-btn-group -->
+              </form>
+              <div class="row">
+                <a href="#">Already have an account? <span>Log In</span></a>
+              </div>
+            </div><!-- .inner -->
+          </div><!-- .form-->
+        </div><!-- .content -->
+      </div>
+    </div>
+  </div>
+</main>
+<!-- /.page-main -->
+@include "includes/footer.html";
+@include "includes/scripts.html";

@@ -1,0 +1,1823 @@
+
+ /* ==========================================================================
+ page page-my-account-login
+ ========================================================================== */
+ .modal-dialog{
+ 	background: #FFF;
+  margin: 0 auto;
+ 	.modal-header{
+    border-bottom: none;
+ 		.close{
+ 			opacity: 1;
+ 		}
+ 	}
+ }
+ @media screen and(min-width:992px){
+ 	.modal-dialog{
+ 		&.vertical-center{
+ 			position: fixed;
+ 			left: 0;
+ 			right: 0;
+ 			top: 0;
+ 			bottom: 0;
+ 			margin: auto;
+ 			display: table;
+ 			.modal-header{
+ 				.close{
+ 					opacity: 1;
+ 					span{
+ 						img{
+ 							display: block;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+ @media screen and(max-width:991px){
+   .modal-dialog{
+     top: 20%;
+   }
+ }
+ .modal-form{
+   .modal-header{
+     padding: 25px 25px 10px 25px;
+   }
+   .form{
+     input[type="text"]{
+       clear: both;
+       font-size: 14px;
+       color: #7b7b7b;
+       padding: 0px 18px;
+       width: 310px;
+       height: 40px;
+       border: 1px solid #D7D7D7;
+       border-radius: 8px;
+       background-color: #FFFFFF;
+     }
+   }
+ }
+ .form{
+   input[type="text"]{
+     clear: both;
+     font-size: 14px;
+     color: #7b7b7b;
+     padding: 0px 13px;
+     width: 310px;
+     height: 40px;
+     border: 1px solid #D7D7D7;
+     border-radius: 8px;
+     background-color: #FFFFFF;
+   }
+   textarea{
+     border: 1px solid #D7D7D7;
+     border-radius: 8px;
+     background-color: #FFFFFF;
+     height: 112px;
+     width: 100%;
+     padding: 13px;
+   }
+ }
+ #modal-my-account-login{
+ 	.modal-header{
+ 		border-bottom: none;
+ 		padding: 15px 20px 15px 20px;
+ 	}
+ 	.modal-body{
+ 		padding-top: 0px;
+ 		h3{
+ 			margin-bottom: 25px;
+ 			font-size: 24px;
+ 			text-align: center;
+ 		}
+ 		.social-login{
+ 			padding: 20px 0px 10px 0px;
+ 			float: left;
+ 			display:block;
+ 			color: #FFF;
+ 			font-weight: 600;
+ 			font-size: 14px;
+ 			width: 50%;
+ 			text-align: center;
+ 			.inner{
+ 				display: inline-block;
+ 				margin: 0 auto;
+ 				.fb{
+ 					display: inline-block;
+ 					cursor: pointer;
+ 					margin-bottom: 20px;
+ 					height: 40px;
+ 					line-height: 40px;
+ 					text-align: center;
+ 					width: 310px;
+ 					display: block;
+ 					background: #304b92;
+ 					border-radius: 8px;
+ 					.fa-facebook{
+ 						font-size: 20px;
+ 						margin-right: 8px;
+ 					}
+ 				}
+ 				.google-plus{
+ 					display: inline-block;
+ 					cursor: pointer;
+ 					height: 40px;
+ 					line-height: 40px;
+ 					text-align: center;
+ 					width: 310px;
+ 					display: block;
+ 					background: #dc3f24;
+ 					border-radius: 8px;
+ 					.fa-google-plus{
+ 						font-size: 20px;
+ 						margin-right: 8px;
+ 					}
+ 				}
+ 			}
+ 		}
+ 		.form{
+ 			padding: 20px 0px 10px 0px;
+ 			width: 50%;
+ 			float: left;
+ 			display:block;
+ 			text-align: center;
+ 			border-left: 2px solid #dcdcdc;
+ 			.inner{
+ 				margin: 0 auto;
+ 				display: inline-block;
+ 				.form-login{
+ 					.error{
+ 						input[type="text"]{
+ 							border: 1px solid #df523a;
+ 						}
+ 					}
+ 					input[type="text"]{
+ 						clear: both;
+ 						font-size: 14px;
+ 						color: #7b7b7b;
+ 						padding: 0px 18px;
+ 						width: 310px;
+ 						height: 40px;
+ 						border: 1px solid #D7D7D7;
+ 						border-radius: 8px;
+ 						background-color: #FFFFFF;
+ 					}
+ 					input[type="submit"]{
+ 						clear: both;
+ 						padding: 0px 18px;
+ 						width: 310px;
+ 						height: 40px;
+ 						border-radius: 8px;
+ 						background-color: #0b2961;
+ 						margin-bottom: 10px;
+ 						border-radius: 100px;
+ 						color: #FFFFFF;
+ 						font-size: 14px;
+ 						font-weight: 600;
+ 						letter-spacing: 2px;
+ 					}
+ 					.error-message{
+ 						width: 185px;
+ 						padding: 10px;
+ 						background: #dc3f24;
+ 						color: #FFF;
+ 						font-size: 12px;
+ 						display: block;
+ 						border-radius: 5px;
+ 						position: absolute;
+ 						right: -200px;
+ 						z-index: 99;
+ 						top: 0px;
+ 						.inner{
+ 							position: relative;
+ 							:before {
+ 							  content: '';
+ 							  display: block;
+ 							  width: 0;
+ 							  height: 0;
+ 							  position: absolute;
+ 							  border-top: 8px solid transparent;
+ 							  border-bottom: 8px solid transparent;
+ 							  border-right: 8px solid #dc3f24;
+ 							  left: -18px;
+ 							  top: 7px;
+ 							}
+ 						}
+ 					}
+ 					.email{
+ 						width: 310px;
+ 						display:block;
+ 						margin-bottom: 20px;
+ 						position: relative;
+ 						.error-message{
+ 							display: none;
+ 						}
+ 						&.error{
+ 							.error-message{
+ 								display: inline-block;
+ 							}
+ 						}
+ 					}
+ 					.pass-word{
+ 						width: 310px;
+ 						margin-bottom: 20px;
+ 						display:block;
+ 						position: relative;
+ 						margin-bottom: 20px;
+ 						.error-message{
+ 							display: none;
+ 						}
+ 						&.error{
+ 							.error-message{
+ 								display: inline-block;
+ 							}
+ 						}
+ 						input[type="text"]{
+ 							margin-bottom: 0px;
+ 						}
+ 						.forgot{
+ 							position: absolute;
+ 							right: 20px;
+ 							top: 12px;
+ 							color: #00489F;
+ 							font-size: 14px;
+ 							letter-spacing: 1px;
+ 							line-height: 14px;
+ 						}
+ 					}
+ 				}
+ 			}
+ 			.row{
+ 				a{
+ 					font-size: 12px;
+ 					&:hover{
+ 						color: #272828;
+ 						span{
+ 							color: #00489F;
+ 						}
+ 					}
+ 					span{
+ 						color: #00489F;
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+ @media screen and(max-width:1100px){
+ 	#modal-my-account-login{
+ 		.modal-body{
+ 			h3{
+ 				margin-bottom: 25px;
+ 				font-size: 24px;
+ 				text-align: center;
+ 			}
+ 			.form{
+ 				.inner{
+ 					.form-login{
+ 						.error-message{
+ 							margin-top: 7px;
+ 							width: auto;
+ 							padding:0px;
+ 							background: #FFF;
+ 							width: 310px;
+ 							font-size: 12px;
+ 							display: inline-block;
+ 							border-radius: 5px;
+ 							position: relative;
+ 							color: #dc3f24;
+ 							right: 0px;
+ 							z-index: 99;
+ 							top: 0px;
+ 							.inner{
+ 								position: relative;
+ 								text-align: left;
+ 								:before {
+ 								  display: none;
+ 								}
+ 							}
+ 						}
+ 						.email{
+ 							position: relative;
+ 							display:block;
+ 						}
+ 						.pass-word{
+ 							display:block;
+ 							position: relative;
+ 							margin-bottom: 20px;
+ 							input[type="text"]{
+ 								margin-bottom: 0px;
+ 							}
+ 							.forgot{
+ 								position: absolute;
+ 								right: 50px;
+ 								top: 12px;
+ 								color: #00489F;
+ 								font-size: 14px;
+ 								letter-spacing: 1px;
+ 								line-height: 14px;
+ 							}
+ 						}
+ 					}
+ 				}
+ 				.row{
+ 					a{
+ 						font-size: 12px;
+ 						&:hover{
+ 							color: #272828;
+ 							span{
+ 								color: #00489F;
+ 							}
+ 						}
+ 						span{
+ 							color: #00489F;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+ @media screen and(max-width:779px){
+ 	#modal-my-account-login{
+ 		.modal-body{
+ 			h3{
+ 				margin-bottom: 20px;
+ 				font-size: 24px;
+ 				text-align: center;
+ 			}
+ 			.social-login{
+ 				padding: 20px 0px 10px 0px;
+ 				float: none;
+ 				display:block;
+ 				width: 100%;
+ 				.inner{
+ 					padding-bottom: 40px;
+ 				}
+ 			}
+ 			.form{
+ 				padding: 20px 0px 10px 0px;
+ 				width: 100%;
+ 				float: none;
+ 				display:block;
+ 				border-left: none;
+ 			}
+ 		}
+ 	}
+ }
+ .page-my-account-login{
+ 	@media screen and (min-width: 780px){
+ 		.modal-dialog {
+ 	    width: 780px;
+ 		}
+ 	}
+ }
+ /* ==========================================================================
+ page reset password
+ ========================================================================== */
+ #modal-my-account-reset-password{
+   .modal-dialog{
+     text-align: center;
+     	width: 581px;
+      .modal-body{
+        padding: 0px 40px 40px 40px;
+        h3{
+          font-size: 30px;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 16px;
+        }
+        form{
+          padding-top: 25px;
+          .row{
+            clear: both;
+            display: block;
+            input[type="text"]{
+              margin-bottom: 30px;
+            }
+            input[type="submit"]{
+              height: 40px;
+              width: 309px;
+              color: #FFFFFF;
+              font-size: 14px;
+              border-radius: 100px;
+              background-color: #0B2961;
+            }
+          }
+        }
+      }
+   }
+   @media screen and(max-width: 767px){
+     .modal-dialog{
+       width: 100%;
+     }
+   }
+ }
+ /* ==========================================================================
+ page tab my account my account
+ ========================================================================== */
+
+ #tab-my-account{
+   padding: 40px 0px;
+   background: #FFF;
+   &.has-border{
+     border-bottom: 1px solid #dad6bb;
+   }
+   .inner-ctn{
+     display: inline-block;
+     margin: 0 auto;
+     .welcome-user{
+       width: 170px;
+       float: left;
+       .thumb-nail{
+         overflow: hidden;
+         border-radius: 50%;
+         margin: 0 auto;
+         height: 125px;
+         width: 128.36px;
+         position: relative;
+         img{
+           height: 125px;
+           width: 128.36px;
+           border-radius: 50%;
+         }
+         span{
+           background: #ebebeb;
+           text-align: center;
+           width: 84px;
+           display: block;
+           color: #00489F;
+           font-size: 12px;
+           height: 17px;
+           line-height: 17px;
+           position: absolute;
+           bottom: 0px;
+           left: 50%;
+           margin-left: -42px;
+         }
+       }
+       .name{
+         padding-top: 2px;
+         font-size: 24px;
+         letter-spacing: 1px;
+         margin-bottom: 7px;
+         display: block;
+       }
+       .row{
+         ul{
+           li{
+             margin: 0px;
+             position: relative;
+             text-align: center;
+             float: left;
+             &:last-child{
+               &:before{
+                 display: none;
+               }
+             }
+             &:before{
+               content: "";
+               width: 1px;
+               height: 50px;
+               display: block;
+               background: #dcdcdc;
+               position: absolute;
+               right: -1px;
+               top: 4px;
+             }
+             span{
+               width: 100px;
+             }
+             .text{
+               font-size: 14.4px;
+               line-height: 14px;
+             }
+             .number{
+               display: block;
+               color: #B2A96D;
+               font-size: 32px;
+               font-weight: 600;
+               line-height: 32px;
+               text-align: center;
+             }
+           }
+         }
+       }
+     }
+     .right-meta{
+       float: left;
+       margin-left: 60px;
+       .info{
+         margin-bottom: 30px;
+         text-align: left;
+         ul{
+           float: left;
+           &:nth-child(2){
+             margin-left: 40px;
+             li{
+               span{
+                 width: 125px;
+               }
+               .hl{
+                 width: 160px;
+               }
+             }
+           }
+           li{
+             margin: 0px 0px 10px 0px;
+             span{
+               font-size: 16px;
+               color: #919292;
+               width: 70px;
+               display: block;
+               float: left;
+               margin-right: 10px;
+             }
+             .hl{
+               margin-right: 0px;
+               width: auto;
+               color: #121313;
+             }
+           }
+         }
+       }
+       .btn-showmore{
+         a{
+           height: 40px;
+           line-height: 40px;
+           width: 199px;
+           border-radius: 100px;
+           text-align: center;
+           color: #FFF;
+           display: block;
+           padding: 0px 0px;
+           float: left;
+         }
+         .edit{
+            background-color: #0B2961;
+         }
+         .changer-password{
+           background-color: #00489F;
+           margin-left: 40px;
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:991px){
+   #tab-my-account{
+     .inner-ctn{
+       .welcome-user{
+         display: block;
+         float: none;
+         text-align: center;
+         width: 170px;
+         margin: 0 auto;
+       }
+       .right-meta{
+         margin-left: 0px;
+         padding-top: 50px;
+         float: none;
+         display: block;
+       }
+     }
+   }
+ }
+ @media screen and(max-width:991px){
+   #tab-my-account{
+     .inner-ctn-fluid{
+       width: 100%;
+     }
+   }
+ }
+ @media screen and(max-width:650px){
+   #tab-my-account{
+     .inner-ctn{
+       width: 100%;
+       .welcome-user{
+         display: block;
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+       }
+       .right-meta{
+         .info{
+           ul{
+             text-align: center;
+             display: block;
+             float: none;
+             &:nth-child(2){
+               margin-left: 0px;
+               li{
+                 text-align: center;
+                 span{
+                   width: auto;
+                 }
+                 .hl{
+                   width: auto;
+                   float: none;
+                   text-align: left;
+                 }
+               }
+             }
+             li{
+               width: auto;
+               span{
+                 font-size: 15px;
+                 width: auto;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:530px){
+   #tab-my-account{
+     .inner-ctn{
+       width: 100%;
+       .right-meta{
+         clear: both;
+         .btn-showmore{
+           display: block;
+           text-align: center;
+           a{
+             width: 180px;
+             font-size: 15px;
+             margin: 0 auto;
+           }
+           .changer-password{
+             margin-left: 10px;
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:430px){
+   #tab-my-account{
+     .inner-ctn{
+       .right-meta{
+         .btn-showmore{
+           display: block;
+           text-align: center;
+           a{
+             width: 160px;
+             font-size: 14px;
+             margin: 0 auto;
+           }
+           .changer-password{
+             margin-left: 10px;
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:400px){
+   #tab-my-account{
+     .inner-ctn{
+       .right-meta{
+         padding-top: 20px;
+         .btn-showmore{
+           display: block;
+           text-align: center;
+           a{
+             width: 100%;
+             font-size: 13px;
+             display: block;
+           }
+           .edit{
+             margin-bottom: 20px;
+           }
+           .changer-password{
+             margin-left: 0px;
+           }
+         }
+       }
+     }
+   }
+ }
+ /* ==========================================================================
+ page update password
+ ========================================================================== */
+ // .tab-my-account-update-password{
+ //   border-bottom: 1px solid #dad6bb;
+ // }
+ .new-password{
+   float: left;
+   margin-left: 50px;
+   .form{
+     input[type="text"]{
+       height: 42px;
+       display: block;
+       margin-bottom: 23px;
+       width: 537px;
+     }
+     .md-btn-group{
+       padding-top: 7px;
+       .inner{
+         float: right;
+         .btn{
+           width: 200px;
+         }
+         .btn-blue{
+           margin-left: 40px;
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:991px){
+   .new-password{
+     width: 100%;
+     float: none;
+     margin-left: 0px;
+     .form{
+       width: 100%;
+       form{
+         width: 100%;
+         display: inline-block;
+         margin: 0 auto;
+         .form{
+           padding-top: 0px;
+         }
+       }
+       padding-top: 50px;
+       input[type="text"]{
+         height: 42px;
+         display: block;
+         margin-bottom: 23px;
+         width: 100%;
+       }
+       .md-btn-group{
+         padding-top: 7px;
+         .inner{
+           float: right;
+           .btn{
+             width: 150px;
+           }
+           .btn-blue{
+             margin-left: 40px;
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:768px){
+   .new-password{
+     width: 100%;
+     display: block;
+     float: none;
+     margin-left: 0px;
+     .form{
+       padding-top: 50px;
+       input[type="text"]{
+         height: 42px;
+         display: block;
+         margin-bottom: 23px;
+         width: 100%;
+       }
+       .md-btn-group{
+         padding-top: 7px;
+         .inner{
+           float: none;
+           .btn{
+             width: 150px;
+           }
+           .btn-blue{
+             margin-left: 40px;
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:500px){
+   .new-password{
+     width: 100%;
+     display: block;
+     float: none;
+     margin-left: 0px;
+     .form{
+       padding-top: 50px;
+       input[type="text"]{
+         height: 42px;
+         display: block;
+         margin-bottom: 23px;
+         width: 100%;
+       }
+       .md-btn-group{
+         padding-top: 7px;
+         .inner{
+           width: 100%;
+           float: none;
+           .btn{
+             width: 100%;
+             display: block;
+           }
+           .btn-blue{
+             margin-left: 0px;
+           }
+           .btn-green{
+             margin-bottom: 15px;
+           }
+         }
+       }
+     }
+   }
+ }
+ /* ==========================================================================
+ page my-account-edit
+ ========================================================================== */
+ .ui.checkbox label{
+   color: #272828;	font-family: "Open Sans";	font-size: 16px;	line-height: 16px;
+   font-weight: normal;
+ }
+ .box:before, .ui.radio.checkbox label:before{
+   width: 16px;
+   height: 16px;
+   display: block;
+   border: 2px solid #1c5daa;
+ }
+ .ui.checkbox input:checked~.box:before, .ui.checkbox input:checked~label:before{
+   border: 2px solid #1c5daa;
+   top: 1px !important;
+   left: 0 !important;
+ }
+ .ui.radio.checkbox input:checked~.box:after, .ui.radio.checkbox input:checked~label:after{
+   content: "";
+   border-radius: 50% !important;
+   width: 16px;
+   height: 16px;
+   transform: scale(0.65);
+   display: block;
+   background: #00489f;
+ }
+ .box:before, .ui.radio.checkbox label:after{
+   width: 16px;
+   height: 16px;
+   border: 2px solid #1c5daa;
+ }
+ .my-account-edit{
+   .form{
+     form{
+       ul{
+         text-align: left;
+         li{
+           margin-left: 0px;
+           margin-bottom: 15px;
+           input[type="text"]{
+             margin-left: 0px;
+             margin-right: 0px;
+             margin-bottom: 0px;
+           }
+           label{
+             font-family: "Open Sans";
+             display: block;
+             margin-bottom: 7px;
+           }
+         }
+       }
+       .fl-left{
+         width: 222px;
+         float: left;
+         li{
+           input[type="text"]{
+             width: 100%;
+           }
+           .datepicker{
+             position: relative;
+             .icon{
+               position: absolute;
+               right: 10px;
+               top: 10px;
+             }
+           }
+         }
+       }
+       .fl-right{
+         margin-left: 23px;
+         width: 289px;
+         float: left;
+         li{
+           input[type="text"]{
+             width: 100%;
+           }
+         }
+       }
+       .ui,.form{
+        .block{
+          display: block;
+          width: 100%;
+        }
+        .inline, .fields{
+          margin-bottom: 0px;
+          label{
+            margin-bottom: 0px;
+          }
+        }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:991px){
+   .my-account-edit{
+     width: 100% !important;
+     display: inline-block;
+     width: auto;
+     .form{
+       form{
+         .fl-left{
+           width: 47%;
+           float: left;
+           li{
+             input[type="text"]{
+               width: 100%;
+             }
+           }
+         }
+         .fl-right{
+           margin-left:6%;
+           width: 47%;
+           float: left;
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:500px){
+   .my-account-edit{
+     width: 100% !important;
+     display: inline-block;
+     width: auto;
+     .form{
+       form{
+         .fl-left{
+           width: 100%;
+           float: none;
+           display: block;
+           li{
+             input[type="text"]{
+               width: 100%;
+             }
+           }
+         }
+         .fl-right{
+           width: 100%;
+           float: none;
+           display: block;
+           margin-left: 0px;
+         }
+       }
+     }
+   }
+ }
+ /* ==========================================================================
+ page My-Account-Registration
+ ========================================================================== */
+ .modal-form{
+   .form{
+     .row{
+       width: 316px;
+       margin: 0 auto;
+     }
+     .form-registration{
+       display: inline-block;
+       .row{
+         width: 316px;
+         display: inline-block;
+         text-align: left;
+         display: inline-block;
+         input[type="text"]{
+           text-align: left;
+           display: inline-block;
+           width: 150px;
+           margin: 0px 0px 13px 7px;
+           &:first-child{
+             margin-left: 0px;
+           }
+         }
+         textarea{
+           margin:0px 0px 10px 0px;
+           height: 112px;
+           width: 312px;
+         }
+       }
+       .md-btn-group{
+         padding-top: 16px;
+         input[type="submit"]{
+           width: 100%;
+           height: 40px;
+           margin:0px 0px 5px 0px;
+           width: 309px;
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:779px){
+   .modal-form{
+     .form{
+       .form-registration{
+         display: inline-block;
+         .row{
+           margin: 0 auto;
+           clear: both;
+           width: 316px;
+           display:block;
+           text-align: left;
+           input[type="text"]{
+             clear: none;
+             display: inline-block;
+
+             float: left;
+             &:first-child{
+               margin-left: 0%;
+             }
+           }
+           textarea{
+             margin:0px 0px 10px 0px;
+             height: 112px;
+
+           }
+         }
+         .md-btn-group{
+           padding-top: 20px;
+           input[type="submit"]{
+             width: 100%;
+             height: 40px;
+             margin-left: 7px;
+             width: 309px;
+           }
+         }
+       }
+     }
+   }
+ }
+ /* ==========================================================================
+ page my-account-my-bookings
+ ========================================================================== */
+ .tab-redeem-rewards{
+   padding: 25px 0px 22px 0px;
+   span{
+     display: block;
+   }
+   ul{
+     padding-top: 5px;
+     display: inline-block;
+     li{
+       margin: 0px;
+       position: relative;
+       text-align: center;
+       float: left;
+       &:last-child{
+         &:before{
+           display: none;
+         }
+       }
+       span{
+         width: 110px;
+       }
+       .text{
+         font-size: 14.4px;
+         line-height: 14px;
+       }
+       .number{
+         display: block;
+         color: #B2A96D;
+         font-size: 32px;
+         font-weight: 600;
+         margin-bottom: 5px;
+         line-height: 32px;
+         text-align: center;
+       }
+     }
+   }
+ }
+ .my-account-my-bookings{
+   padding-top: 50px;
+   .md-title{
+     text-align: left;
+   }
+   .current-bookings{
+     margin-bottom: 40px;
+   }
+ }
+ .md-list-bookings{
+   overflow: hidden;
+   margin-bottom: 20px;
+   border: 1px solid #D8D8D8;
+   border-radius: 8px;
+   background-color: #FFFFFF;
+   height: 137px;
+   text-align: left;
+   .thumb-nail{
+     float: left;
+     height: 137px;
+     width: 206px;
+     img{
+       height: 137px;
+       width: 206px;
+     }
+   }
+   .right-info{
+     float: left;
+     padding-left: 20px;
+     width: calc(100% - 206px);
+     .md-vertical-center{
+       line-height: 137px;
+       height: 100%;
+       display: inline-block;
+       .inner-vertical{
+         line-height: 1.2em;
+         display: inline-block;
+         vertical-align: middle;
+       }
+     }
+     .col-left{
+       width: 60%;
+       float: left;
+       height: 100%;
+       display: block;
+       .col-left-inner{
+         .info{
+           margin-bottom: 8px;
+           width: 65%;
+           float: left;
+           padding-right: 10px;
+           h3{
+            margin-top: -8px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+           }
+           .code{
+             font-size: 16px;
+           }
+         }
+         .date{
+           float: left;
+           height: 100%;
+           line-height:137px;
+           width: 35%;
+           span{
+             font-size: 16px;	font-weight: 600;
+           }
+         }
+       }
+     }
+     .col-right{
+       width: 40%;
+       display: block;
+       float: left;
+       .col-right-inner{
+         .md-rating{
+           width: 90px;
+           display: inline-block;
+           float: left;
+         }
+         .not-available{
+           max-width: 170px;
+           text-align: center;
+           span{
+             color: #E41717;
+             font-size: 14px;
+             font-weight: 600;
+             letter-spacing: 2px;
+             line-height: 20px;
+             text-align: center;
+             width: 100%;
+             display: block;
+           }
+         }
+         .md-btn-group{
+           width: calc(100% - 90px);
+           float: right;
+           padding-right: 7%;
+           .inner {
+              text-align: right;
+             width: 100%;
+             .btn-green{
+               max-width: 170px;
+               text-align: center;
+               width: 100%;
+             }
+             .btn-blue{
+               text-align: center;
+               max-width: 219px;
+               width: 100%;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:1050px){
+   .md-list-bookings{
+     .right-info{
+       padding-right: 15px;
+       .md-vertical-center{
+         line-height: 137px;
+         height: 100%;
+         display: inline-block;
+         .inner-vertical{
+           line-height: 1.2em;
+           display: inline-block;
+           vertical-align: middle;
+         }
+       }
+       .col-right{
+         text-align: center;
+         width: 40%;
+         display: inline-block;
+         float: left;
+         line-height: 137px;
+         height: 100%;
+         display: inline-block;
+         .md-vertical-center{
+           line-height: auto;
+           height: 100%;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-right-inner{
+           height: 100%;
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0 auto;
+           .md-rating{
+             margin-bottom: 10px;
+             width:100%;
+             display:block;
+             float: left;
+             text-align: center;
+             .inner-vertical{
+               margin: 0 auto;
+             }
+           }
+           .md-btn-group{
+             width: 100%;
+             text-align: center;
+             padding-right:0%;
+             .inner {
+               text-align: center;
+               width: 100%;
+               a{
+                 margin: 0 auto;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:1021px){
+   .md-list-bookings{
+     .right-info{
+       .col-left{
+         width: 60%;
+         float: left;
+         height: 100%;
+         line-height: 137px;
+         display: block;
+         .md-vertical-center{
+           line-height: auto;
+           height: 100%;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-left-inner{
+           line-height: 1.2em;
+           display: inline-block ;
+           vertical-align: middle;
+           .info{
+             width: 100%;
+             float: left;
+             padding-right: 10px;
+             h3{
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 30px;
+             }
+             .code{
+               font-size: 15px;
+             }
+           }
+           .date{
+             float: left;
+             height: 100%;
+             line-height:137px;
+             width: 100%;
+             span{
+               font-size: 16px;	font-weight: 600;
+             }
+           }
+         }
+       }
+       .col-right{
+         text-align: center;
+         width: 40%;
+         display: inline-block;
+         float: left;
+         line-height: 137px;
+         height: 100%;
+         display: inline-block;
+         .md-vertical-center{
+           line-height: auto;
+           height: 100%;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-right-inner{
+           height: 100%;
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0 auto;
+           .md-rating{
+             margin-bottom: 10px;
+             width:100%;
+             display:block;
+             float: left;
+             text-align: center;
+             .inner-vertical{
+               margin: 0 auto;
+             }
+           }
+           .md-btn-group{
+             width: 100%;
+             text-align: center;
+             padding-right:0%;
+             .inner {
+               text-align: center;
+               width: 100%;
+               a{
+                 margin: 0 auto;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:768px){
+   .md-list-bookings{
+     padding: 20px 0px 20px 20px;
+     height: auto;
+     position: relative;
+     background: #FFF;
+     display: block;
+     height: auto;
+     .right-info{
+       padding-left: 40px;
+       width: calc(100% - 206px);
+       float: left;
+       display: inline-block;
+       .col-left{
+         margin-bottom: 10px;
+         width: 100%;
+         float: left;
+         height: 100%;
+         line-height:1em;
+         display: block;
+         .md-vertical-center{
+           line-height: auto;
+           height: 100%;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-left-inner{
+           line-height: 1.2em;
+           display: inline-block ;
+           vertical-align: middle;
+           .info{
+             width: 100%;
+             float: left;
+             padding-right: 10px;
+             margin-bottom: 12px;
+             h3{
+               margin-top: 0px;
+               font-size: 22px;
+               line-height: 24px;
+               margin-bottom: 5px;
+             }
+             .code{
+               font-size: 14px;
+             }
+           }
+           .date{
+             float: left;
+             height: 100%;
+             line-height:137px;
+             width: 100%;
+             span{
+               font-size: 16px;	font-weight: 600;
+             }
+           }
+         }
+       }
+       .col-right{
+         height: auto;
+         width: 100%;
+         float: left;
+         line-height: 1em;
+         display: inline-block;
+         .md-vertical-center{
+           line-height: auto;
+           height: auto;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-right-inner{
+           height: 100%;
+           width: 100%;
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0px;
+           .md-rating{
+             height: auto;
+             width:auto;
+             display:block;
+             float: left;
+             text-align: left;
+             .inner-vertical{
+               margin: 0 auto;
+             }
+           }
+           .md-btn-group{
+             float:right;
+             margin-right: 10px;
+             width: auto;
+             text-align: left;
+             padding-right:0%;
+             .inner {
+               text-align: left;
+               width: 100%;
+               a{
+                 margin: none;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:620px){
+   .md-list-bookings{
+     padding: 20px 20px 20px 20px;
+     height: auto;
+     position: relative;
+     background: #FFF;
+     display: block;
+     height: auto;
+     .right-info{
+       .col-right{
+         height: auto;
+         width: 100%;
+         float: left;
+         line-height: 1em;
+         display: inline-block;
+         .md-vertical-center{
+           line-height: auto;
+           height: auto;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-right-inner{
+           height: 100%;
+           width: 100%;
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0px;
+           .md-rating{
+             height: auto;
+             margin-bottom: 15px;
+             width:auto;
+             display:block;
+             float: left;
+             text-align: left;
+             .inner-vertical{
+               margin: 0 auto;
+             }
+           }
+           .not-available{
+             clear: both;
+             display: inline-block;
+             float: left;
+             margin-left: 0px;
+             text-align: left;
+             span{
+               text-align: left;
+             }
+           }
+           .md-btn-group{
+             float:left;
+             margin-right: 10px;
+             width: 100% ;
+             text-align: left;
+             padding-right:0%;
+             .inner {
+               text-align: left;
+               width: 100%;
+               a{
+                 margin: none;
+               }
+             }
+           }
+         }
+       }
+       .col-left{
+         .col-left-inner{
+           .info{
+             .code{
+               font-size: 14px;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:550px){
+   .md-list-bookings{
+     padding: 20px 0px 30px 20px;
+     height: auto;
+     position: relative;
+     background: #FFF;
+     display: block;
+     height: auto;
+     .thumb-nail{
+       width: 170px;
+       height: 113px;
+       img{
+         width: 170px;
+         height: 113px;
+       }
+     }
+     .right-info{
+       width: calc(100% - 170px);
+       padding-left: 20px;
+       .col-right{
+         height: auto;
+         width: 100%;
+         float: left;
+         line-height: 1em;
+         display: inline-block;
+         .md-vertical-center{
+           line-height: auto;
+           height: auto;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .col-right-inner{
+           height: 100%;
+           width: 100%;
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0px;
+           .md-rating{
+             height: auto;
+             margin-bottom: 15px;
+             width:auto;
+             display:block;
+             float: left;
+             text-align: left;
+             .inner-vertical{
+               margin: 0 auto;
+             }
+           }
+           .md-btn-group{
+             float:left;
+             margin-right: 10px;
+             width: 100% ;
+             text-align: left;
+             padding-right:0px;
+             .inner {
+               text-align: left;
+               width: 100%;
+               a{
+                 margin: none;
+               }
+             }
+           }
+         }
+       }
+       .col-left{
+         .col-left-inner{
+           .info{
+             .code{
+               font-size: 13px;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:460px){
+   .md-list-bookings{
+     padding: 20px 20px;
+     .thumb-nail{
+       width: 206px;
+       height: 137px;
+       text-align: left;
+       margin-bottom: 24px;
+       width: 100%;
+       img{
+         width: 206px;
+         height: 137px;
+       }
+     }
+     .right-info{
+       width:100%;
+       padding-left: 0px;
+       .col-right{
+         height: auto;
+         width: 100%;
+         float: left;
+         line-height: 1em;
+         display: inline-block;
+         .md-vertical-center{
+           line-height: auto;
+           height: auto;
+           display: inline-block;
+           .inner-vertical{
+             line-height: 1.2em;
+             display: block;
+             vertical-align: middle;
+           }
+         }
+         .has-duration{
+           .md-rating{
+             float: left;
+             display: inline-block;
+           }
+         }
+         .col-right-inner{
+           height: 100%;
+           width: 100%;
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0px;
+           .md-rating{
+             height: auto;
+             margin-bottom: 15px;
+             width:auto;
+             display:block;
+             float: left;
+             .inner-vertical{
+               margin: 0 auto;
+             }
+           }
+           .not-available{
+             width: auto;
+             clear: none;
+             float: left;
+             display: inline-block;
+             margin-left: 20px;
+             span{
+               text-align: left;
+             }
+           }
+           .md-btn-group{
+             margin-right: 0px;
+             width: 100% ;
+             float: right;
+             padding-right:0%;
+             .inner {
+               text-align: left;
+               width: 100%;
+               a{
+                 font-size: 14px;
+                 margin: none;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ /* ==========================================================================
+ page my-Points-History
+ ========================================================================== */
+ @media screen and(max-width:992px){
+  .td-none{
+    width: 0px;
+  }
+ }
+ .my-account-points-history{
+   .top-control{
+     text-align: left;
+     margin-bottom: 40px;
+     padding-top: 60px;
+     .pagination{
+       float: right;
+       padding-right: 10%;
+       margin: 0px;
+       .next{
+         float: left;
+         margin-left: 17px;
+         cursor: pointer;
+       }
+       .prev{
+         float: left;
+         cursor: pointer;
+       }
+     }
+   }
+ }
+ .md-table{
+   table{
+     background: #FFF;
+     thead{
+       border-bottom: none;
+       padding-left: 150px;
+       background-color: #FBF9E7;
+       tr{
+         text-transform: uppercase;
+         padding-left: 150px;
+         th{
+           border-bottom: none;
+           padding-top: 13px;
+           padding-bottom: 13px;
+         }
+       }
+     }
+     tbody{
+       border: none;
+       tr{
+         td{
+           font-size: 16px;
+           font-weight: 600;
+           padding-top: 35px;
+           padding-bottom: 35px;
+           border-bottom: 1px solid #d8d8d8;
+           border-top: none;
+           span{
+             word-break: break-all;
+           }
+         }
+       }
+     }
+   }
+ }
+ @media screen and(max-width:650px){
+   .md-table{
+     .td-none{
+       width: 0px;
+     }
+     table{
+       tbody{
+         tr{
+           td{
+             padding-top: 20px;
+             padding-bottom: 20px;
+             font-size: 13px;
+             word-break: break-all;
+             span{
+               word-break: break-all;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
